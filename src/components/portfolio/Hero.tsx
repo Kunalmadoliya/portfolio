@@ -70,8 +70,13 @@ export function Hero() {
           >
             <div className="absolute inset-0 scanlines opacity-40" />
             <div className="relative aspect-square border-2 border-[color:var(--ink)] bg-[color:var(--retro-yellow)] grid place-items-center">
-              <div className="font-display text-[64px] sm:text-[80px] text-[color:var(--ink)] animate-bob">
-                KM
+              {/* Responsive container keeping your floating bob animation */}
+              <div className="w-full h-full p-4 pb-14 flex items-center justify-center animate-bob">
+                <img 
+                  src='./portfolio.png' 
+                  alt="Kunal Madoliya Portfolio Avatar"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between border-2 border-[color:var(--ink)] bg-[color:var(--paper)] px-2 py-1 font-mono text-[9px] font-bold uppercase">
                 <span>LVL 01</span>
