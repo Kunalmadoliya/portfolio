@@ -37,7 +37,7 @@ export function Contact() {
           description="Internships, freelance gigs, or just to say hi — my inbox is open."
         />
 
-        <div className="grid grid-cols-12 gap-4">
+        <div className="grid  gap-4">
           <Reveal className="col-span-12 lg:col-span-5">
             <div className="pixel-card p-6 h-full flex flex-col justify-between">
               <div>
@@ -80,7 +80,7 @@ export function Contact() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.1} className="col-span-12 lg:col-span-7">
+          {/* <Reveal delay={0.1} className="col-span-12 lg:col-span-7">
             <form onSubmit={onSubmit} className="pixel-card p-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <Field label="Name" name="name" placeholder="Your name" />
@@ -116,36 +116,36 @@ export function Contact() {
                 </button>
               </div>
             </form>
-          </Reveal>
+          </Reveal> */}
         </div>
       </div>
     </section>
   );
 }
 
-function Field({
-  label,
-  name,
-  type = "text",
-  placeholder,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  placeholder?: string;
-}) {
-  return (
-    <div>
-      <label className="mb-1.5 block font-mono text-[10px] font-bold uppercase text-muted-foreground">
-        {label}
-      </label>
-      <input
-        name={name}
-        type={type}
-        maxLength={255}
-        placeholder={placeholder}
-        className="w-full border-2 border-[color:var(--ink)] bg-[color:var(--paper)] px-3 py-2 text-lg font-sans outline-none transition-all placeholder:text-muted-foreground/60 focus:shadow-[3px_3px_0_0_var(--ink)] focus:-translate-x-[1px] focus:-translate-y-[1px]"
-      />
-    </div>
-  );
-}
+// function Field({
+//   label,
+//   name,
+//   type = "text",
+//   placeholder,
+// }: {
+//   label: string;
+//   name: string;
+//   type?: string;
+//   placeholder?: string;
+// }) {
+//   return (
+//     <div>
+//       <label className="mb-1.5 block font-mono text-[10px] font-bold uppercase text-muted-foreground">
+//         {label}
+//       </label>
+//       <input
+//         name={name}
+//         type={type}
+//         maxLength={255}
+//         placeholder={placeholder}
+//         className="w-full border-2 border-[color:var(--ink)] bg-[color:var(--paper)] px-3 py-2 text-lg font-sans outline-none transition-all placeholder:text-muted-foreground/60 focus:shadow-[3px_3px_0_0_var(--ink)] focus:-translate-x-[1px] focus:-translate-y-[1px]"
+//       />
+//     </div>
+//   );
+// }
