@@ -19,8 +19,8 @@ const PROJECTS = [
     tech: ["TypeScript", "React", "Tailwind"],
     color: "var(--retro-blue)",
     span: "md:col-span-5",
-    demo: "#",
-    code: "https://github.com/Kunalmadoliya?tab=repositories",
+    demo: "https://ftheform.kunalmadoliya.me",
+    code: "https://github.com/Kunalmadoliya/ftheform",
   },
 ];
 

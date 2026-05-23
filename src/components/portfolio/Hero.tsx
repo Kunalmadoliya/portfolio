@@ -41,19 +41,20 @@ export function Hero() {
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href="projects"
+                href="/#projects"
                 className="pixel-btn-accent inline-flex items-center gap-2 px-4 py-2.5 font-mono text-[11px] font-bold uppercase"
               >
                 ▶ See Projects <ArrowRight size={14} />
               </a>
               <a
-                href="contact"
+                href="/#contact"
                 className="pixel-btn inline-flex items-center gap-2 px-4 py-2.5 font-mono text-[11px] font-bold uppercase"
               >
                 ✉ Contact
               </a>
               <a
-                href="#"
+                href="/GGSIPU_CV_Template__1_.pdf"
+                download
                 className="inline-flex items-center gap-2 border-2 border-[color:var(--ink)] bg-[color:var(--paper)] px-4 py-2.5 font-mono text-[11px] font-bold uppercase shadow-[3px_3px_0_0_var(--ink)] transition-all hover:bg-[color:var(--retro-yellow)]"
               >
                 <Download size={14} /> CV
@@ -72,8 +73,8 @@ export function Hero() {
             <div className="relative aspect-square border-2 border-[color:var(--ink)] bg-[color:var(--retro-yellow)] grid place-items-center">
               {/* Responsive container keeping your floating bob animation */}
               <div className="w-full h-full p-4 pb-14 flex items-center justify-center animate-bob">
-                <img 
-                  src='./portfolio.png' 
+                <img
+                  src="./portfolio.png"
                   alt="Kunal Madoliya Portfolio Avatar"
                   className="w-full h-full object-contain"
                 />
