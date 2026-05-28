@@ -8,7 +8,7 @@ export function Footer() {
           </span>
           © {new Date().getFullYear()} Kunal Madoliya
         </div>
-        <div>Built with ♥ · React · Tailwind · Framer Motion</div>
+        <div>Built with ♥ KUNAL MADOLIYA</div>
       </div>
     </footer>
   );
