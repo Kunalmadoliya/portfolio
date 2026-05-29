@@ -2,6 +2,15 @@ import { ArrowUpRight, Github } from 'lucide-react'
 import { Reveal, SectionHeader } from './Section'
 
 const PROJECTS = [
+    {
+    title: 'Singaway',
+    tag: 'Main',
+    description: 'A Project — a career platform for job seeker.',
+    tech: ['TypeScript', 'React', 'Tailwind'],
+    color: 'var(--retro-blue)',
+    span: 'md:col-span-7',
+    demo: 'https://www.singawaycareer.com',
+  },
   {
     title: 'SSO',
     tag: 'Main',
@@ -9,19 +18,11 @@ const PROJECTS = [
       'My main project — a single sign-on authentication system built from scratch.',
     tech: ['React', 'Node.js', 'Redis'],
     color: 'var(--retro-red)',
-    span: 'md:col-span-7 ',
+    span: 'md:col-span-5',
     demo: 'https://sso-production-d29b.up.railway.app',
     code: 'https://github.com/Kunalmadoliya/sso',
   },
-  {
-    title: 'Singaway',
-    tag: 'Side',
-    description: 'A Project — a career platform for job seeker.',
-    tech: ['TypeScript', 'React', 'Tailwind'],
-    color: 'var(--retro-blue)',
-    span: 'md:col-span-5',
-    demo: 'https://www.singawaycareer.com',
-  },
+
 ]
 
 export function Projects() {
