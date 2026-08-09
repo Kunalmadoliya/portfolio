@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import {
   ArrowRight,
+  BookOpen,
   Download,
   Github,
   Linkedin,
@@ -8,6 +9,7 @@ import {
   MapPin,
   Sparkles,
   Twitter,
+  Youtube,
 } from 'lucide-react'
 
 export function Hero() {
@@ -32,7 +34,7 @@ export function Hero() {
               <span className="text-[color:var(--retro-red)]">MADOLIYA</span>
             </h1>
             <p className="mt-4 font-sans text-xl text-foreground/80 leading-snug max-w-lg">
-              Aspiring full-stack developer & fresher looking for an
+              Aspiring full-stack developer &amp; fresher looking for an
               <span className="bg-[color:var(--retro-yellow)] px-1 mx-1 text-[color:var(--ink)] border-2 border-[color:var(--ink)] font-bold">
                 internship
               </span>
@@ -125,7 +127,7 @@ export function Hero() {
             <div className="font-mono text-[10px] font-bold uppercase text-muted-foreground">
               Find me ▸
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {[
                 {
                   Icon: Github,
@@ -141,6 +143,16 @@ export function Hero() {
                   Icon: Twitter,
                   label: 'X',
                   href: 'https://x.com/Kunalmadoliya',
+                },
+                {
+                  Icon: Youtube,
+                  label: 'YT',
+                  href: 'https://www.youtube.com/@kunalmadoliya',
+                },
+                {
+                  Icon: BookOpen,
+                  label: 'BLOG',
+                  href: 'https://dev.to/kunal_dev',
                 },
                 { Icon: Mail, label: 'EM', href: '#contact' },
               ].map(({ Icon, label, href }) => (

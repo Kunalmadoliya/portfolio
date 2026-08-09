@@ -53,5 +53,19 @@
       "esbuild",
       "lightningcss"
     ]
-  }
+  },
+  "version": "1.0.0",
+  "description": "Welcome to your new TanStack Start app!",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunalmadoliya/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kunalmadoliya/portfolio/issues"
+  },
+  "homepage": "https://github.com/Kunalmadoliya/portfolio#readme"
 }

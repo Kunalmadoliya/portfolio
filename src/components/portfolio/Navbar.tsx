@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X, Youtube, BookOpen } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 
 const NAV = [
@@ -10,6 +10,21 @@ const NAV = [
   { href: "#projects", label: "PROJECTS" },
   { href: "#journey", label: "JOURNEY" },
   { href: "#contact", label: "CONTACT" },
+];
+
+const NAV_EXTERNAL = [
+  {
+    href: "https://www.youtube.com/@kunalmadoliya",
+    label: "YOUTUBE",
+    Icon: Youtube,
+    hoverClass: "hover:bg-[color:var(--retro-red)] hover:text-white",
+  },
+  {
+    href: "https://dev.to/kunal_dev",
+    label: "BLOG",
+    Icon: BookOpen,
+    hoverClass: "hover:bg-[color:var(--retro-blue)] hover:text-white",
+  },
 ];
 
 export function Navbar() {
@@ -42,6 +57,7 @@ export function Navbar() {
           </span>
         </a>
 
+        {/* Desktop Nav */}
         <nav className="hidden items-center gap-0.5 md:flex">
           {NAV.map((n) => (
             <a
@@ -49,6 +65,19 @@ export function Navbar() {
               href={n.href}
               className="rounded-sm px-2.5 py-1 font-mono text-[11px] font-bold uppercase text-foreground/80 transition-colors hover:bg-[color:var(--retro-yellow)] hover:text-[color:var(--ink)]"
             >
+              {n.label}
+            </a>
+          ))}
+          <div className="mx-1 h-4 w-[2px] bg-[color:var(--ink)] opacity-20" />
+          {NAV_EXTERNAL.map((n) => (
+            <a
+              key={n.href}
+              href={n.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-1 rounded-sm px-2.5 py-1 font-mono text-[11px] font-bold uppercase text-foreground/80 transition-colors ${n.hoverClass}`}
+            >
+              <n.Icon size={12} />
               {n.label}
             </a>
           ))}
@@ -93,6 +122,20 @@ export function Navbar() {
                 className="rounded-sm px-3 py-2 font-mono text-xs font-bold uppercase hover:bg-[color:var(--retro-yellow)]"
               >
                 {n.label}
+              </a>
+            ))}
+            <div className="my-1 h-[2px] bg-[color:var(--ink)] opacity-10" />
+            {NAV_EXTERNAL.map((n) => (
+              <a
+                key={n.href}
+                href={n.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className={`inline-flex items-center gap-2 rounded-sm px-3 py-2 font-mono text-xs font-bold uppercase transition-colors ${n.hoverClass}`}
+              >
+                <n.Icon size={13} />
+                {n.label} ↗
               </a>
             ))}
           </nav>
