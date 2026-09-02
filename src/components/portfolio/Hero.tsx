@@ -55,7 +55,7 @@ export function Hero() {
                 ✉ Contact
               </a>
               <a
-                href="/GGSIPU_CV_Template__1_.pdf"
+                href="/kunalmadoliya_resume.pdf"
                 download
                 className="inline-flex items-center gap-2 border-2 border-[color:var(--ink)] bg-[color:var(--paper)] px-4 py-2.5 font-mono text-[11px] font-bold uppercase shadow-[3px_3px_0_0_var(--ink)] transition-all hover:bg-[color:var(--retro-yellow)]"
               >
