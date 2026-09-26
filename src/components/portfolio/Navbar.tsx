@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { Menu, Moon, Sun, X, Youtube, BookOpen } from "lucide-react";
+import { Menu, Moon, Sun, X, BookOpen } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 
 const NAV = [
@@ -13,12 +13,6 @@ const NAV = [
 ];
 
 const NAV_EXTERNAL = [
-  {
-    href: "https://www.youtube.com/@kunalmadoliya",
-    label: "YOUTUBE",
-    Icon: Youtube,
-    hoverClass: "hover:bg-[color:var(--retro-red)] hover:text-white",
-  },
   {
     href: "https://dev.to/kunal_dev",
     label: "BLOG",

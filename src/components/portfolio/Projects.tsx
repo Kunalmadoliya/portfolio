@@ -2,27 +2,25 @@ import { ArrowUpRight, Github } from 'lucide-react'
 import { Reveal, SectionHeader } from './Section'
 
 const PROJECTS = [
-    {
-    title: 'Singaway',
+  {
+    title: 'Fill the Form',
     tag: 'Main',
-    description: 'A Project — a career platform for job seeker.',
+    description: 'A simple and focused form-filling project.',
     tech: ['TypeScript', 'React', 'Tailwind'],
     color: 'var(--retro-blue)',
     span: 'md:col-span-7',
-    demo: 'https://www.singawaycareer.com',
+    demo: 'https://chatgpt.kunalmadoliya.me/',
+    code: 'https://github.com/Kunalmadoliya/ftheform',
   },
   {
-    title: 'SSO',
-    tag: 'Main',
-    description:
-      'My main project — a single sign-on authentication system built from scratch.',
-    tech: ['React', 'Node.js', 'Redis'],
+    title: 'ChatGPT',
+    tag: 'Build',
+    description: 'A ChatGPT project built for exploring useful AI workflows.',
+    tech: ['TypeScript', 'React'],
     color: 'var(--retro-red)',
     span: 'md:col-span-5',
-    demo: 'https://sso-production-d29b.up.railway.app',
-    code: 'https://github.com/Kunalmadoliya/sso',
+    demo: 'https://chatgpt.kunalmadoliya.me/',
   },
-
 ]
 
 export function Projects() {

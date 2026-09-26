@@ -9,7 +9,6 @@ import {
   MapPin,
   Sparkles,
   Twitter,
-  Youtube,
 } from 'lucide-react'
 
 export function Hero() {
@@ -143,11 +142,6 @@ export function Hero() {
                   Icon: Twitter,
                   label: 'X',
                   href: 'https://x.com/Kunalmadoliya',
-                },
-                {
-                  Icon: Youtube,
-                  label: 'YT',
-                  href: 'https://www.youtube.com/@kunalmadoliya',
                 },
                 {
                   Icon: BookOpen,

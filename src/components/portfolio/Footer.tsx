@@ -1,4 +1,4 @@
-import { Youtube, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,15 +11,6 @@ export function Footer() {
           © {new Date().getFullYear()} Kunal Madoliya
         </div>
         <div className="flex items-center gap-3">
-          <a
-            href="https://www.youtube.com/@kunalmadoliya"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-            className="grid h-7 w-7 place-items-center border-2 border-[color:var(--ink)] bg-[color:var(--paper)] shadow-[2px_2px_0_0_var(--ink)] transition-all hover:bg-[color:var(--retro-red)] hover:text-white active:translate-x-[1px] active:translate-y-[1px] active:shadow-none"
-          >
-            <Youtube size={13} />
-          </a>
           <a
             href="https://dev.to/kunal_dev"
             target="_blank"

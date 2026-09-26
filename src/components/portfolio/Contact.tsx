@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, BookOpen, Github, Linkedin, Mail, MapPin, Twitter, Youtube } from "lucide-react";
+import { ArrowRight, BookOpen, Github, Linkedin, Mail, MapPin, Twitter } from "lucide-react";
 import { z } from "zod";
 import { Reveal, SectionHeader } from "./Section";
 
@@ -65,7 +65,6 @@ export function Contact() {
                   { Icon: Github, href: "https://github.com/Kunalmadoliya?tab=repositories" },
                   { Icon: Linkedin, href: "https://www.linkedin.com/in/kunal-madoliya-0378133b4/" },
                   { Icon: Twitter, href: "https://x.com/Kunalmadoliya" },
-                  { Icon: Youtube, href: "https://www.youtube.com/@kunalmadoliya" },
                   { Icon: BookOpen, href: "https://dev.to/kunal_dev" },
                 ].map(({ Icon, href }, i) => (
                   <a
