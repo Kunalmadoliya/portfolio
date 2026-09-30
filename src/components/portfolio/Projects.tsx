@@ -3,13 +3,13 @@ import { Reveal, SectionHeader } from './Section'
 
 const PROJECTS = [
   {
-    title: 'Fill the Form',
+    title: 'Fill the Form (Building)',
     tag: 'Main',
     description: 'A simple and focused form-filling project.',
     tech: ['TypeScript', 'React', 'Tailwind'],
     color: 'var(--retro-blue)',
     span: 'md:col-span-7',
-    demo: 'https://chatgpt.kunalmadoliya.me/',
+    demo: '',
     code: 'https://github.com/Kunalmadoliya/ftheform',
   },
   {
